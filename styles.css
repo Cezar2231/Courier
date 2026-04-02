@@ -10,10 +10,6 @@ body {
   text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
 }
 
-.hero-bg {
-  background: linear-gradient(to bottom, rgba(241, 234, 234, 0.7), rgba(0,0,0,0.9)), url('img/hamalski-uslugi.jpg') center/cover;
-}
-
 .slide-indicator {
   width: 12px;
   height: 12px;
@@ -60,4 +56,10 @@ body {
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero-bg {
+    background-position: center top;
+  }
 }
