@@ -10,7 +10,7 @@
       <script src="https://unpkg.com/lucide@latest"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="shortcut icon" href="img/8x6x4-single-wall-box.jpg" type="image/x-icon" />
+      <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
       <script src="https://kit.fontawesome.com/6eef58c398.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="styles.css">
@@ -18,27 +18,20 @@
    <body class="smooth-scroll bg-gray-50">
 
       <!-- Navigation -->
-<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 ">
    <div class="w-full">
 
       <!-- Glass Container -->
-      <div class="rounded-2xl bg-white/70 backdrop-blur-xl border border-white/30 shadow-lg">
+      <div class="rounded-2xl bg-white/70 backdrop-blur-xl border border-white/30 shadow-lg bg-gradient-to-r from-orange-500 to-blue-600">
 
          <!-- Top Row -->
          <div class="flex justify-between items-center h-20 px-4 border-b border-white/20">
 
             <!-- Logo -->
             <div class="flex items-center gap-3">
-               <dotlottie-player
-                  src="img/moving car.lottie"
-                  background="transparent"
-                  speed="1"
-                  class="h-14"
-                  loop
-                  autoplay>
-               </dotlottie-player>
+               <img src="img/logo.png" alt="logo" class="w-32">
 
-               <a href="index.html" class="logo-text text-1xl md:text-2xl whitespace-nowrap">
+               <a href="index.html" class="logo-text text-1xl md:text-2xl whitespace-nowrap text-blue-600">
                   Транспортни Услуги
                </a>
             </div>
@@ -117,16 +110,52 @@
    </div>
 </nav>
 
-<div class="h-28"></div>
+
+<section class="w-full min-h-screen flex items-center bg-gradient-to-r from-orange-500 to-blue-600 text-white relative">
+  
+  <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-end w-full">
+    
+    <!-- LEFT (TEXT) -->
+    <div class="space-y-6 self-center">
+
+      <h1 class="text-3xl md:text-5xl font-bold leading-tight mt-20">
+        Fix and Move Solution -  <br />
+        професионална доставка и монтаж на мебели в Бургас
+      </h1>
+
+      <h2 class="text-3xl md:text-5xl text-blue-600 font-bold">
+        От магазина до напълно готовия дом!
+      </h2>
+
+      <p class="text-gray-200 max-w-lg">
+        Ние не сме просто транспортна услуга - ние завършваме всичко вместо вас: вземаме, транспортираме, монтираме и подреждаме вашите мебели с внимание и професионализъм.
+      </p>
+
+      <a href="tel:+359XXXXXXXXX" 
+         class="bg-orange-500 hover:bg-blue-600 px-6 py-3 rounded-full font-semibold transition inline-block">
+      Поискай оферта →
+      </a>
+
+    </div>
+
+    <!-- RIGHT (IMAGE) -->
+  <div class="hidden md:block absolute bottom-0 right-0 w-1/2">
+      <img src="img/hero-2-1.png.webp" class="w-full w-[300px] md:w-[500px] object-contain" />
+   </div>
+
+  </div>
+
+</section>
+
 
       <!-- Hero Section -->
       <section class="relative hero-bg min-h-[600px] flex items-center justify-center overflow-hidden">
          <!-- Navigation Arrows -->
-          <img src="img/hamalski-uslugi.jpg" class="absolute inset-0 w-full h-full object-cover object-[center_top] md:object-center">
-         <button onclick="prevSlide()" class="z-20 absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-white transition group z-10">
+         <img id="hero-image" src="img/hamalski-uslugi.jpg" class="absolute inset-0 w-full h-full object-cover object-[center_top] md:object-center">
+         <button onclick="prevSlide()" class="z-20 absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-orange-600 hover:bg-white/20 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-blue-600 transition group z-10">
          <i data-lucide="arrow-left" class="w-6 h-6"></i>
          </button>
-         <button onclick="nextSlide()" class="z-20 absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center text-white transition group z-10">
+         <button onclick="nextSlide()" class="z-20 absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-orange-600 hover:bg-white/20 rounded-full flex items-center justify-center text-blue-600 transition group z-10">
          <i data-lucide="arrow-right" class="w-6 h-6"></i>
          </button>
          <!-- Hero Content -->
@@ -151,7 +180,7 @@
             </div>
          </div>
       </section>
-      <!-- Services Section  bg-gradient-to-r from-indigo-900 via-purple-800 to-pink-600 opacity-95 ili bg-gradient-to-r from-orange-500 to-blue-600 -->
+      <!-- Services Section -->
       <section class="py-16 md:py-24 bg-gradient-to-r from-orange-500 to-blue-600">
          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -168,23 +197,25 @@
                         loop
                         autoplay
                         ></dotlottie-player>
+                        
                   </div>
                   <!-- CONTENT -->
-                  <h3 class="text-lg font-bold text-slate-900 mb-3 mt-6">
-                     Доставка до адрес
+                  <h3 class="text-lg font-bold text-slate-900 mb-3">
+                     Доставка до клиента
                   </h3>
+                  <p class="mb-3">Вземаме мебелите от магазина и ги доставяме безопасно до вашия адрес, включително качване до етаж.</p>
                   <ul class="space-y-2 mb-5 text-sm text-slate-600">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Доставка до адрес</span>
+                        <span>Вземане от магазин</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Доставка до адрес</span>
+                        <span>Транспорт до адрес</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Доставка до адрес</span>
+                        <span>Качване до етаж</span>
                      </li>
                   </ul>
                </div>
@@ -203,21 +234,22 @@
                         ></dotlottie-player>
                   </div>
                   <!-- CONTENT -->
-                  <h3 class="text-lg font-bold text-slate-900 mb-3 mt-6">
-                    Разглабяне и извозване на мебели
+                  <h3 class="text-lg font-bold text-slate-900 mb-3">
+                    Демонтаж и извозване
                   </h3>
+                  <p class="mb-3">Демонтираме и извозваме старите мебели, за да освободим пространство за новото обзавеждане.</p>
                   <ul class="space-y-2 mb-5 text-sm text-slate-600">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Разглабяне и извозване на мебели</span>
+                        <span>Демонтаж на стари мебели</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Разглабяне и извозване на мебели</span>
+                        <span>Организирано извозване</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Разглабяне и извозване на мебели</span>
+                        <span>Почистване след извозване</span>
                      </li>
                   </ul>
                </div>
@@ -235,21 +267,22 @@
                         ></dotlottie-player>
                   </div>
                   <!-- CONTENT -->
-                  <h3 class="text-lg font-bold text-slate-900 mb-3 mt-6">
+                  <h3 class="text-lg font-bold text-slate-900 mb-3">
                      Можем да сглобим всякакви мебели
                   </h3>
+                  <p class="mb-3">Монтаж от опитни специалисти с финално подреждане и проверка за стабилност.</p>
                   <ul class="space-y-2 mb-5 text-sm text-slate-600">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Можем да сглобим всякакви мебели</span>
+                        <span>Монтаж на мебели</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Можем да сглобим всякакви мебели</span>
+                        <span>Финално подреждане</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Можем да сглобим всякакви мебели</span>
+                        <span>Проверка за сигурност</span>
                      </li>
                   </ul>
                </div>
@@ -259,7 +292,7 @@
                <div class="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group overflow-hidden">
                   <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                      <dotlottie-player
-                        src="img/packing.lottie"
+                        src="img/truck loading.lottie"
                         background="transparent"
                         speed="1"
                         class="lottie-truck"
@@ -269,30 +302,32 @@
                   </div>
                   <!-- CONTENT -->
                   <h3 class="text-lg font-bold text-slate-900 mb-3 mt-6">
-                     Пакетиране без шансове за чупливост
+                     Пълна организация
                   </h3>
+                  <p class="mb-3">Поемаме целия процес – от поръчката до готовите мебели, без да се тревожите за нищо.</p>
                   <ul class="space-y-2 mb-5 text-sm text-slate-600">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Пакетиране без шансове за чупливост</span>
+                        <span>Свързване и уточняване на нуждите</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Пакетиране без шансове за чупливост</span>
+                        <span>Ясна и точна цена, без скрити такси</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Пакетиране без шансове за чупливост</span>
+                        <span>Изпълнение на доставката и монтажа в определените срокове</span>
+                     </li>
+                     <li class="flex items-start gap-2">
+                        <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
+                        <span>Готов резултат – мебели, готови за използване</span>
                      </li>
                   </ul>
-                  <a href="gallery.html" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-red-600 transition group/link">
-                  Към галерията 
-                  <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition"></i>
-                  <i data-lucide="chevron-right" class="w-4 h-4 -ml-2 group-hover/link:translate-x-1 transition"></i>
-                  </a>
                </div>
             </div>
          </div>
+
+         
       </section>
       <!-- Footer -->
        <hr>
@@ -308,7 +343,7 @@
 
          <!-- Logo + Text -->
          <div>
-            <h2 class="text-3xl font-bold mb-4">Транспортни услуги</h2>
+            <h2 class="text-3xl font-bold mb-4 ">Транспортни услуги</h2>
             <p class="text-sm text-gray-200 leading-relaxed">
                Премести се лесно, живей на чисто.  
                Свържете се с нас за безплатна консултация!

@@ -33,22 +33,26 @@ window.addEventListener("scroll", function () {
   }
 });
 
+const image = document.getElementById("hero-image");
 // Slides content
 const slidesContent = [
     {
         top: "Свържете се с нас за безплатна консултация.",
         title: "Винаги<br>навреме!",
-        sub: "Работим в Бургас и околността!"
+        sub: "Работим в Бургас и околността!",
+        img: "img/slide1.jpg"
     },
     {
-        top: "Свържете се с нас за безплатна консултация.",
-        title: "Винаги<br>навреме!",
-        sub: "Работим в Бургас и околността!"
+        top: "Бързо и сигурно преместване",
+        title: "Без<br>стрес!",
+        sub: "Доверете се на професионалисти!",
+        img: "img/slide2.jpg"
     },
     {
-        top: "Свържете се с нас за безплатна консултация.",
-        title: "Винаги<br>навреме!",
-        sub: "Работим в Бургас и околността!"
+        top: "Най-добрите цени",
+        title: "Изгодно<br>решение!",
+        sub: "Качество на достъпна цена!",
+        img: "img/slide3.jpg"
     }
 ];
 
@@ -61,9 +65,9 @@ function updateSlide() {
     const topText = document.getElementById("hero-top-text");
     const title = document.getElementById("hero-title");
     const sub = document.getElementById("hero-subtext");
+    const image = document.getElementById("hero-image");
 
-    // ако няма hero елементи → СПРИ
-    if (!topText || !title || !sub) return;
+    if (!topText || !title || !sub || !image) return;
 
     indicators.forEach((ind, index) => {
         ind.classList.toggle('active', index === currentSlide);
@@ -72,6 +76,8 @@ function updateSlide() {
     topText.innerText = slidesContent[currentSlide].top;
     title.innerHTML = slidesContent[currentSlide].title;
     sub.innerText = slidesContent[currentSlide].sub;
+
+    image.src = slidesContent[currentSlide].img;
 }
 
 function nextSlide() {
