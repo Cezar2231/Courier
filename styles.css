@@ -2,6 +2,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo-text {
   font-weight: 900;
   letter-spacing: -0.05em;

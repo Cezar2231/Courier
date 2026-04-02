@@ -40,19 +40,19 @@ const slidesContent = [
         top: "Свържете се с нас за безплатна консултация.",
         title: "Винаги<br>навреме!",
         sub: "Работим в Бургас и околността!",
-        img: "img/slide1.jpg"
+        img: "img/slide1.png"
     },
     {
         top: "Бързо и сигурно преместване",
         title: "Без<br>стрес!",
         sub: "Доверете се на професионалисти!",
-        img: "img/slide2.jpg"
+        img: "img/slide2.png"
     },
     {
         top: "Най-добрите цени",
         title: "Изгодно<br>решение!",
         sub: "Качество на достъпна цена!",
-        img: "img/slide3.jpg"
+        img: "img/slide3.png"
     }
 ];
 
