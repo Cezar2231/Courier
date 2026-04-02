@@ -3,8 +3,8 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>HyperElite | Тапицерия за Автомобили</title>
-      <meta name="description" content="Автотапицер Бургас, Тапицерия, тапициране, волани, алкантар, Бургас">
+      <title>Транспортни услуги</title>
+      <meta name="description" content="Транспортни услуги Бургас, пренасяне на мебели, качване на мебели, транспортиране на мебели">
       <meta name="author" content="Stoil Georgiev">
       <script src="https://cdn.tailwindcss.com"></script>
       <script src="https://unpkg.com/lucide@latest"></script>
@@ -18,68 +18,107 @@
    <body class="smooth-scroll bg-gray-50">
 
       <!-- Navigation -->
-      <nav class=" shadow-md sticky top-0 z-50 bg-fade">
-         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Top Row: Logo and Phone CTA -->
-            <div class="flex justify-between items-center h-20 border-b border-gray-100">
-               <!-- LEFT: Logo + Name -->
-               <div class="flex items-center gap-3">
-                  <a href="index.html">
-                        <dotlottie-player
-                        src="moving car.lottie"
-                        background="transparent"
-                        speed="1"
-                        class="lottie-truck h-16"
-                        loop
-                        autoplay
-                        ></dotlottie-player>
-                  <a href="index.html" class="logo-text text-1xl md:text-2xl">Транспортни Услуги</a>
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+   <div class="w-full">
+
+      <!-- Glass Container -->
+      <div class="rounded-2xl bg-white/70 backdrop-blur-xl border border-white/30 shadow-lg">
+
+         <!-- Top Row -->
+         <div class="flex justify-between items-center h-20 px-4 border-b border-white/20">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+               <dotlottie-player
+                  src="img/moving car.lottie"
+                  background="transparent"
+                  speed="1"
+                  class="h-14"
+                  loop
+                  autoplay>
+               </dotlottie-player>
+
+               <a href="index.html" class="logo-text text-1xl md:text-2xl whitespace-nowrap">
+                  Транспортни Услуги
+               </a>
+            </div>
+
+            <!-- Phone CTA -->
+            <div class="hidden md:flex items-center gap-3">
+               <div class="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white shadow-md">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
                </div>
-               <!-- RIGHT: Phone CTA -->
-               <div class="hidden md:flex items-center gap-3">
-                  <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-white">
-                     <i data-lucide="phone" class="w-5 h-5"></i>
-                  </div>
-                  <div class="flex flex-col">
-                     <span class="text-xs">Позвъни</span>
-                     <span><a class="text-sm font-bold text-slate-900" href="tel:+359885315800">088 531 5800</a></span> 
-                  </div>
-               </div>
-               <!-- Mobile menu button -->
-               <div class="lg:hidden">
-                  <button onclick="toggleMobileMenu()" class="text-slate-700 hover:text-red-600 p-2">
-                  <i data-lucide="menu" class="w-6 h-6"></i>
-                  </button>
+               <div class="flex flex-col">
+                  <span class="text-xs text-orange-500 font-bold">Позвъни</span>
+                  <a class="text-sm font-bold text-slate-900" href="tel:+359">088 000 0000</a>
                </div>
             </div>
+
+            <!-- Mobile button -->
+            <div class="lg:hidden">
+               <button onclick="toggleMobileMenu()" class="text-slate-700 hover:text-orange-500 p-2">
+                  <i data-lucide="menu" class="w-6 h-6"></i>
+               </button>
+            </div>
          </div>
-         <!-- Bottom Row: Navigation Menu -->
+
+         <!-- Bottom Menu -->
          <div class="hidden lg:flex justify-center items-center h-14">
             <div class="flex items-center space-x-8">
-               <a href="index.html" class="nav-link active text-red-600 font-semibold text-sm uppercase tracking-wider">Начало</a>
-               <a href="gallery.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Услуги</a>
-               <a href="video.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">Контакти</a>
-               <a href="information.html" class="nav-link text-slate-700 hover:text-red-600 font-medium text-sm uppercase tracking-wider transition">ЧЗП</a>
+
+               <a href="index.html" class="nav-link text-orange-500 font-semibold text-sm uppercase tracking-wider">
+                  Начало
+               </a>
+
+               <a href="№" class="nav-link text-slate-700 hover:text-blue-600 font-medium text-sm uppercase tracking-wider transition">
+                  Услуги
+               </a>
+
+               <a href="№" class="nav-link text-slate-700 hover:text-blue-600 font-medium text-sm uppercase tracking-wider transition">
+                  Контакти
+               </a>
+
+               <a href="№" class="nav-link text-slate-700 hover:text-blue-600 font-medium text-sm uppercase tracking-wider transition">
+                  ЧЗВ
+               </a>
+
             </div>
          </div>
+
+      </div>
+   </div>
+
+   <!-- Mobile Menu -->
+   <div id="mobile-menu" class="hidden lg:hidden px-4 mt-2">
+      <div class="rounded-xl bg-white/80 backdrop-blur-xl border border-white/30 shadow-lg p-4 space-y-2">
+
+         <a href="№" class="block px-3 py-2 text-orange-500 font-semibold bg-orange-50 rounded-md">
+            Начало
+         </a>
+
+         <a href="№" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">
+            Услуги
+         </a>
+
+         <a href="№" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">
+            Контакти
+         </a>
+
+         <a href="№" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">
+            ЧЗВ
+         </a>
+
+         <div class="pt-3 border-t border-gray-200 flex items-center gap-2 text-slate-700">
+            <i data-lucide="phone" class="w-4 h-4 text-orange-500"></i>
+            <span class="font-bold">088 000 0000</span>
          </div>
-         <!-- Mobile Menu -->
-         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100">
-            <div class="px-4 pt-2 pb-4 space-y-1">
-               <a href="index.html" class="block px-3 py-2 text-red-600 font-semibold bg-red-50 rounded-md">Начало</a>
-               <a href="gallery.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Галерия</a>
-               <a href="video.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Видео</a>
-               <a href="information.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Информация</a>
-               <a href="materials.html" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">Материали</a>
-               <div class="px-3 py-2 border-t border-gray-100 mt-2">
-                  <div class="flex items-center gap-2 text-slate-700">
-                     <i data-lucide="phone" class="w-4 h-4 text-red-600"></i>
-                     <span class="font-bold"><a href="+359885315800">088 531 5800</a></span>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </nav>
+
+      </div>
+   </div>
+</nav>
+
+<div class="h-28"></div>
+
       <!-- Hero Section -->
       <section class="relative hero-bg min-h-[600px] flex items-center justify-center overflow-hidden">
          <!-- Navigation Arrows -->
@@ -100,8 +139,8 @@
             <!-- Subtext -->
             <p id="hero-subtext" class="mt-12 sm:mt-0 text-xs text-gray-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto"></p>
             <!-- Button -->
-            <a href="materials.html" class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-full transition">
-            Повече за материалите
+            <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-full transition">
+            Повече за нас
             </a>
             <!-- Indicators -->
             <div class="flex justify-center gap-3 mt-12">
@@ -111,8 +150,8 @@
             </div>
          </div>
       </section>
-      <!-- Services Section -->
-      <section class="py-16 md:py-24 bg-slate-50">
+      <!-- Services Section  bg-gradient-to-r from-indigo-900 via-purple-800 to-pink-600 opacity-95 ili bg-gradient-to-r from-orange-500 to-blue-600 -->
+      <section class="py-16 md:py-24 bg-gradient-to-r from-orange-600 via-purple-600 to-blue-700">
          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
@@ -121,7 +160,7 @@
                   <div class="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group overflow-hidden">
                   <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                      <dotlottie-player
-                        src="Delivery Truck _ Loading _ Exporting.lottie"
+                        src="img/Delivery Truck _ Loading _ Exporting.lottie"
                         background="transparent"
                         speed="1"
                         class="lottie-truck"
@@ -131,27 +170,22 @@
                   </div>
                   <!-- CONTENT -->
                   <h3 class="text-lg font-bold text-slate-900 mb-3 mt-6">
-                     Изработка на маншони
+                     Доставка до адрес
                   </h3>
                   <ul class="space-y-2 mb-5 text-sm text-slate-600">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Изработка на изцяло нови маншони</span>
+                        <span>Доставка до адрес</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Възможност за персонализация</span>
+                        <span>Доставка до адрес</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>100% съвместимост на кройката</span>
+                        <span>Доставка до адрес</span>
                      </li>
                   </ul>
-                  <a href="gallery.html" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-red-600 transition group/link">
-                  Към галерията 
-                  <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition"></i>
-                  <i data-lucide="chevron-right" class="w-4 h-4 -ml-2 group-hover/link:translate-x-1 transition"></i>
-                  </a>
                </div>
                
               <!-- Service Card 2 -->
@@ -159,7 +193,7 @@
                <div class="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group overflow-hidden">
                   <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                      <dotlottie-player
-                        src="Delivery Truck _ Loading _ Exporting.lottie"
+                        src="img/Furniture Home Delivery.lottie"
                         background="transparent"
                         speed="1"
                         class="lottie-truck"
@@ -169,34 +203,29 @@
                   </div>
                   <!-- CONTENT -->
                   <h3 class="text-lg font-bold text-slate-900 mb-3 mt-6">
-                     Изработка на маншони
+                    Разглабяне и извозване на мебели
                   </h3>
                   <ul class="space-y-2 mb-5 text-sm text-slate-600">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Изработка на изцяло нови маншони</span>
+                        <span>Разглабяне и извозване на мебели</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Възможност за персонализация</span>
+                        <span>Разглабяне и извозване на мебели</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>100% съвместимост на кройката</span>
+                        <span>Разглабяне и извозване на мебели</span>
                      </li>
                   </ul>
-                  <a href="gallery.html" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-red-600 transition group/link">
-                  Към галерията 
-                  <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition"></i>
-                  <i data-lucide="chevron-right" class="w-4 h-4 -ml-2 group-hover/link:translate-x-1 transition"></i>
-                  </a>
                </div>
 
                <!-- Service Card 3 -->
                <div class="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group overflow-hidden">
                   <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                      <dotlottie-player
-                        src="Delivery Truck _ Loading _ Exporting.lottie"
+                        src="img/furniture swap.lottie"
                         background="transparent"
                         speed="1"
                         class="lottie-truck"
@@ -206,27 +235,22 @@
                   </div>
                   <!-- CONTENT -->
                   <h3 class="text-lg font-bold text-slate-900 mb-3 mt-6">
-                     Изработка на маншони
+                     Можем да сглобим всякакви мебели
                   </h3>
                   <ul class="space-y-2 mb-5 text-sm text-slate-600">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Изработка на изцяло нови маншони</span>
+                        <span>Можем да сглобим всякакви мебели</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Възможност за персонализация</span>
+                        <span>Можем да сглобим всякакви мебели</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>100% съвместимост на кройката</span>
+                        <span>Можем да сглобим всякакви мебели</span>
                      </li>
                   </ul>
-                  <a href="gallery.html" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-red-600 transition group/link">
-                  Към галерията 
-                  <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition"></i>
-                  <i data-lucide="chevron-right" class="w-4 h-4 -ml-2 group-hover/link:translate-x-1 transition"></i>
-                  </a>
                </div>
 
                <!-- Service Card 4 -->
@@ -234,7 +258,7 @@
                <div class="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group overflow-hidden">
                   <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                      <dotlottie-player
-                        src="Delivery Truck _ Loading _ Exporting.lottie"
+                        src="img/packing.lottie"
                         background="transparent"
                         speed="1"
                         class="lottie-truck"
@@ -244,20 +268,20 @@
                   </div>
                   <!-- CONTENT -->
                   <h3 class="text-lg font-bold text-slate-900 mb-3 mt-6">
-                     Изработка на маншони
+                     Пакетиране без шансове за чупливост
                   </h3>
                   <ul class="space-y-2 mb-5 text-sm text-slate-600">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Изработка на изцяло нови маншони</span>
+                        <span>Пакетиране без шансове за чупливост</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>Възможност за персонализация</span>
+                        <span>Пакетиране без шансове за чупливост</span>
                      </li>
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
-                        <span>100% съвместимост на кройката</span>
+                        <span>Пакетиране без шансове за чупливост</span>
                      </li>
                   </ul>
                   <a href="gallery.html" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-red-600 transition group/link">
@@ -270,62 +294,116 @@
          </div>
       </section>
       <!-- Footer -->
-      <footer class="footer-gradient text-white relative pt-20 pb-8">
-         <!-- Big Text -->
-         <div class="px-4 mb-16">
-            <div class="big-text-outline select-none">
-               AUTOINTERIOR<br>HYPERELITE
-            </div>
+<footer class="relative text-white pt-16 pb-8 overflow-hidden">
+   <!-- Gradient Background -->
+   <div class="absolute inset-0 bg-gradient-to-r from-orange-600 via-purple-600 to-blue-700"></div>
+
+   <!-- Content -->
+   <div class="relative z-10 max-w-7xl mx-auto px-4">
+
+      <!-- Top Section -->
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+
+         <!-- Logo + Text -->
+         <div>
+            <h2 class="text-3xl font-bold mb-4">Транспортни услуги</h2>
+            <p class="text-sm text-gray-200 leading-relaxed">
+               Премести се лесно, живей на чисто.  
+               Свържете се с нас за безплатна консултация!
+            </p>
          </div>
-         <!-- Scroll to top -->
-         <div class="flex justify-center mb-8">
-            <button onclick="scrollToTop()" class="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-lg flex items-center justify-center transition shadow-lg shadow-red-600/20 group">
-            <i data-lucide="chevron-up" class="w-6 h-6 group-hover:-translate-y-1 transition"></i>
-            </button>
+
+         <!-- Quick Links -->
+         <div>
+            <h3 class="font-semibold mb-4">Бързи връзки</h3>
+            <ul class="space-y-2 text-sm text-gray-200">
+               <li><a href="#" class="hover:text-white">Начало</a></li>
+               <li><a href="#" class="hover:text-white">Услуги</a></li>
+               <li><a href="#" class="hover:text-white">Контакти</a></li>
+               <li><a href="#" class="hover:text-white">ЧЗВ</a></li>
+            </ul>
          </div>
-         <!-- Contact Button Floating -->
-         <div class="fixed bottom-6 right-6 z-40">
-            <button onclick="toggleContactWidget()" class="bg-white hover:bg-gray-100 text-slate-900 px-1 py-1 rounded-full shadow-lg flex items-center gap-2 font-medium transition border border-gray-200">
-               <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white">
-                  <i data-lucide="message-square" class="w-4 h-4"></i>
-               </div>
-            </button>
-            <!-- Contact Widget -->
-            <div id="contact-widget" class="hidden absolute bottom-full right-0 mb-2 bg-white rounded-xl shadow-xl p-4 w-64 border border-gray-100">
-               <h4 class="font-bold text-slate-900 mb-3">Свържете се с нас</h4>
-               <div class="space-y-2">
-                  <a href="tel:+359885315800" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700">
+
+         <!-- Services -->
+         <div>
+            <h3 class="font-semibold mb-4">Хамалски услуги</h3>
+            <ul class="space-y-2 text-sm text-gray-200">
+               <li>Преместване на дома</li>
+               <li>Преместване на офис</li>
+               <li>Преместване на мебели</li>
+               <li>Преместване на техника</li>
+               <li>Изхвърляне на отпадъци</li>
+            </ul>
+         </div>
+
+         <!-- Contacts -->
+         <div>
+            <h3 class="font-semibold mb-4">Контакти</h3>
+            <ul class="space-y-3 text-sm text-gray-200">
+               <li class="flex items-center gap-2">
+                  <i data-lucide="mail" class="w-4 h-4"></i>
+                  <span>example@email.com</span>
+               </li>
+               <li class="flex items-center gap-2">
+                  <i data-lucide="phone" class="w-4 h-4"></i>
+                  <span>+359 888 000 000</span>
+               </li>
+               <li class="flex items-center gap-2">
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                  <span>Бургас, България</span>
+               </li>
+            </ul>
+         </div>
+
+      </div>
+
+      <!-- Contact Button Floating --> 
+       <div class="fixed bottom-6 right-6 z-40">
+          <button onclick="toggleContactWidget()" class="bg-white hover:bg-gray-100 text-slate-900 px-1 py-1 rounded-full shadow-lg flex items-center gap-2 font-medium transition border border-gray-200">
+             <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white"> 
+               <i data-lucide="message-square" class="w-4 h-4"></i> 
+            </div> 
+         </button> 
+         <!-- Contact Widget --> 
+          <div id="contact-widget" class="hidden absolute bottom-full right-0 mb-2 bg-white rounded-xl shadow-xl p-4 w-64 border border-gray-100"> 
+            <h4 class="font-bold text-slate-900 mb-3">Свържете се с нас</h4> 
+            <div class="space-y-2"> 
+               <a href="tel:+359" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700"> 
                   <i data-lucide="phone" class="w-5 h-5 text-red-600"></i>
-                  <span class="text-sm">088 531 5800</span> 
-                  </a>
-                  <a href="#" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700">
+                  <span class="text-sm">088 00 0000</span>
+                </a> 
+                <a href="#" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700"> 
                   <i data-lucide="mail" class="w-5 h-5 text-red-600"></i>
-                  <span class="text-sm">ioanjelev@icloud.com</span>
-                  </a>
-                  <a href="https://www.facebook.com/profile.php?id=61582501319520&mibextid=wwXIfr&rdid=B2VLrUMjMuRA6WWP&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DjKfzYm15%2F%3Fmibextid%3DwwXIfr" target="_blank" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700">
-                  <i data-lucide="message-circle" class="w-5 h-5 text-blue-600"></i>
-                  <span class="text-sm">Messenger</span>
-                  </a>
-                  <a href="https://www.facebook.com/profile.php?id=61582501319520&mibextid=wwXIfr&rdid=B2VLrUMjMuRA6WWP&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DjKfzYm15%2F%3Fmibextid%3DwwXIfr" target="_blank" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700">
-                  <i class="w-5 h-5 text-blue-600 fa-brands fa-facebook"></i>
-                  <span class="text-sm">Facebook</span>
-                  </a>
-                  <a href="https://www.instagram.com/_hyper_elite____?igsh=MXNxMmNjZHF2Nms1aA%3D%3D&utm_source=qr" target="_blank" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700">
-                  <i class="w-5 h-5 text-pink-600 fa-brands fa-instagram"></i>
-                  <span class="text-sm">Instagram</span>
-                  </a>
-                  <a href="https://www.tiktok.com/@hyperelite33?_r=1&_t=ZN-9515Iujr6WM" target="_blank" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700">
-                  <i class="w-5 h-5 text-black-600 fa-brands fa-tiktok"></i>
-                  <span class="text-sm">TikTok</span>
-                  </a>
-               </div>
-            </div>
-         </div>
-         <!-- Copyright -->
-         <div class="border-t border-slate-800 mt-12 pt-8 text-center text-slate-400 text-sm">
-            <p>Copyright © 2026 | Powered by HyperElite</p>
-         </div>
-      </footer>
+                   <span class="text-sm">example@icloud.com</span> </a>
+                    <a href="#" target="_blank" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700"> 
+                        <i data-lucide="message-circle" class="w-5 h-5 text-blue-600"></i> 
+                        <span class="text-sm">Messenger</span> 
+                     </a> 
+                  <a href="#" target="_blank" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700"> 
+                     <i class="w-5 h-5 text-blue-600 fa-brands fa-facebook"></i> 
+                     <span class="text-sm">Facebook</span> 
+                  </a> 
+                  <a href="#" target="_blank" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700"> 
+                     <i class="w-5 h-5 text-pink-600 fa-brands fa-instagram"></i> 
+                     <span class="text-sm">Instagram</span>
+                  </a> 
+                  <a href="#" target="_blank" class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition text-slate-700"> 
+                     <i class="w-5 h-5 text-black-600 fa-brands fa-tiktok"></i> 
+                     <span class="text-sm">TikTok</span> 
+                     </a> 
+                  </div> 
+            </div> 
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 gap-4">
+
+         <p>© 2026 Всички права запазени</p>
+
+      </div>
+
+   </div>
+</footer>
       <script src="script.js"></script>
       <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
    </body>
