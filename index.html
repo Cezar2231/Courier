@@ -29,7 +29,7 @@
 
             <!-- Logo -->
             <div class="flex items-center gap-3">
-               <a href="#index" class="logo-text text-1xl md:text-2xl whitespace-nowrap text-blue-600">
+               <a href="#index" class="logo-text text-1xl md:text-2xl whitespace-nowrap">
                   <img src="img/logo.png" alt="logo" class="w-64">
                </a>
             </div>
@@ -61,15 +61,15 @@
                   Начало
                </a>
 
-               <a href="№" class="nav-link text-slate-700 hover:text-blue-600 font-medium text-sm uppercase tracking-wider transition">
+               <a href="#us" class="nav-link text-slate-700 hover:text-blue-600 font-medium text-sm uppercase tracking-wider transition">
+                  За нас
+               </a>
+
+               <a href="#services" class="nav-link text-slate-700 hover:text-blue-600 font-medium text-sm uppercase tracking-wider transition">
                   Услуги
                </a>
 
-               <a href="№" class="nav-link text-slate-700 hover:text-blue-600 font-medium text-sm uppercase tracking-wider transition">
-                  Контакти
-               </a>
-
-               <a href="№" class="nav-link text-slate-700 hover:text-blue-600 font-medium text-sm uppercase tracking-wider transition">
+               <a href="#questions" class="nav-link text-slate-700 hover:text-blue-600 font-medium text-sm uppercase tracking-wider transition">
                   ЧЗВ
                </a>
 
@@ -87,15 +87,15 @@
             Начало
          </a>
 
-         <a href="№" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">
+         <a href="#us" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">
+            За нас
+         </a>
+
+         <a href="#services" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">
             Услуги
          </a>
 
-         <a href="№" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">
-            Контакти
-         </a>
-
-         <a href="№" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">
+         <a href="#questions" class="block px-3 py-2 text-slate-700 hover:bg-gray-50 rounded-md">
             ЧЗВ
          </a>
 
@@ -111,14 +111,23 @@
 
 <section id="index" class="w-full min-h-screen flex items-center bg-gradient-to-r from-orange-500 to-blue-600 text-white relative">
   
-  <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-end w-full">
+  <div class="max-w-7xl mx-auto px-2 py-8 grid md:grid-cols-2 gap-10 items-end w-full">
     
     <!-- LEFT (TEXT) -->
-    <div class="space-y-6 self-center">
+    <div class="ml-3 space-y-8 self-center">
 
-      <h1 class="text-3xl md:text-5xl font-bold leading-tight mt-20">
-        Fix and Move Solution -  <br />
-        професионална доставка и монтаж на мебели в Бургас
+      <h1 class="font-bold leading-tight md:mt-8 flex items-center gap-3 flex-wrap text-2xl md:text-4xl">
+
+         <!-- First line: text + logo -->
+         <span class="flex items-center gap-2 whitespace-nowrap">
+            Fix and Move Solution
+            <img src="img/logo.png" alt="logo" class="h-12 md:h-22 w-auto">
+         </span>
+
+         <span class="w-full text-lg md:text-2xl">
+            Професионална доставка и монтаж на мебели в Бургас
+         </span>
+
       </h1>
 
       <h2 class="text-3xl md:text-5xl text-blue-800 font-bold">
@@ -178,14 +187,130 @@
             </div>
          </div>
       </section>
+
+      <!-- For us Section -->
+
+      <section id="us" class="relative scroll-mt-24 py-20 md:py-28 bg-gradient-to-r from-orange-500 to-blue-600 text-white overflow-hidden">
+
+  <!-- FLOATING SHAPES -->
+  <div class="absolute top-10 left-10 w-72 h-72 bg-orange-400/30 rounded-full blur-3xl animate-pulse"></div>
+  <div class="absolute bottom-10 right-10 w-72 h-72 bg-blue-400/30 rounded-full blur-3xl animate-pulse"></div>
+
+  <div class="max-w-7xl mx-auto px-4 space-y-24 relative z-10">
+
+    <!-- ROW 1 -->
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- TEXT -->
+      <div class="space-y-6">
+        <span class="text-sm text-orange-200 font-semibold tracking-widest uppercase">
+          Нашият екип
+        </span>
+
+        <h2 class="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-xl">
+          За нас и нашия <span class="text-blue-200">екип</span>
+        </h2>
+
+        <p class="text-white/80 text-lg leading-relaxed max-w-lg">
+          Ние сме фирма за транспорт и монтаж с дългогодишен опит,
+          предлагаща висококачествени услуги и внимание към всеки детайл.
+        </p>
+
+        <p class="text-white/70 leading-relaxed max-w-lg">
+          Работим бързо, чисто и професионално, за да получите напълно готов резултат без усилия.
+        </p>
+
+      </div>
+
+      <!-- IMAGE -->
+      <div class="relative group">
+
+        <!-- GLOW -->
+        <div class="absolute -inset-4 bg-gradient-to-r from-orange-400 to-blue-500 rounded-3xl blur-2xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
+
+        <!-- CARD -->
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl backdrop-blur-xl bg-white/10 border border-white/20">
+
+          <img src="img/slide2.png"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <!-- GLASS OVERLAY -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- IMAGE -->
+      <div class="relative group order-1 md:order-none">
+
+        <!-- GLOW -->
+        <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-orange-500 rounded-3xl blur-2xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
+
+        <!-- CARD -->
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl backdrop-blur-xl bg-white/10 border border-white/20">
+
+          <img src="img//slide1.png"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <!-- GLASS OVERLAY -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+
+        </div>
+      </div>
+
+      <!-- TEXT -->
+      <div class="space-y-6">
+        <h2 class="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-xl">
+          Защо да изберете <span class="text-orange-200">нас?</span>
+        </h2>
+
+        <p class="text-white/80 text-lg leading-relaxed max-w-lg">
+          Гарантираме качество и надеждност. Нашият екип се грижи за всеки детайл,
+          за да получите перфектен резултат.
+        </p>
+
+        <p class="text-white/70 leading-relaxed max-w-lg">
+          Бързи, сигурни и ефективни услуги, съобразени с вашите нужди.
+        </p>
+
+        <!-- FEATURE LIST -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
+            Професионален монтаж
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+            Бърза доставка
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
+            Гарантирано качество
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
       <!-- Services Section -->
-      <section class="py-16 md:py-24 bg-gradient-to-r from-orange-500 to-blue-600">
+      <section id="services" class="scroll-mt-24 py-16 md:py-24 bg-gradient-to-r from-orange-500 to-blue-600">
+         <h1 class="text-center text-4xl mb-10 text-blue-800 font-bold">Услуги</h1>
          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                <!-- Service Card 1 -->
                   
-                  <div class="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group overflow-hidden">
+                  <div class="relative bg-gradient-to-br from-white/40 via-white/10 to-transparent hover:from-orange-400/40 transition duration-500 rounded-xl p-6 shadow-sm hover:shadow-xl border border-slate-100 group overflow-hidden">
                   <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                      <dotlottie-player
                         src="img/Delivery Truck _ Loading _ Exporting.lottie"
@@ -202,7 +327,7 @@
                      Доставка до клиента
                   </h3>
                   <p class="mb-3">Вземаме мебелите от магазина и ги доставяме безопасно до вашия адрес, включително качване до етаж.</p>
-                  <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                  <ul class="space-y-2 mb-5 text-sm text-orange-100">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
                         <span>Вземане от магазин</span>
@@ -220,7 +345,7 @@
                
               <!-- Service Card 2 -->
 
-               <div class="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group overflow-hidden">
+                  <div class="relative bg-gradient-to-br from-white/40 via-white/10 to-transparent hover:from-orange-400/40 transition duration-500 rounded-xl p-6 shadow-sm hover:shadow-xl border border-slate-100 group overflow-hidden">
                   <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                      <dotlottie-player
                         src="img/Furniture Home Delivery.lottie"
@@ -236,7 +361,7 @@
                     Демонтаж и извозване
                   </h3>
                   <p class="mb-3">Демонтираме и извозваме старите мебели, за да освободим пространство за новото обзавеждане.</p>
-                  <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                  <ul class="space-y-2 mb-5 text-sm text-orange-100">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
                         <span>Демонтаж на стари мебели</span>
@@ -253,7 +378,7 @@
                </div>
 
                <!-- Service Card 3 -->
-               <div class="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group overflow-hidden">
+                  <div class="relative bg-gradient-to-br from-white/40 via-white/10 to-transparent hover:from-orange-400/40 transition duration-500 rounded-xl p-6 shadow-sm hover:shadow-xl border border-slate-100 group overflow-hidden">
                   <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                      <dotlottie-player
                         src="img/furniture swap.lottie"
@@ -269,7 +394,7 @@
                      Можем да сглобим всякакви мебели
                   </h3>
                   <p class="mb-3">Монтаж от опитни специалисти с финално подреждане и проверка за стабилност.</p>
-                  <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                  <ul class="space-y-2 mb-5 text-sm text-orange-100">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
                         <span>Монтаж на мебели</span>
@@ -287,7 +412,7 @@
 
                <!-- Service Card 4 -->
 
-               <div class="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group overflow-hidden">
+                  <div class="relative bg-gradient-to-br from-white/40 via-white/10 to-transparent hover:from-orange-400/40 transition duration-500 rounded-xl p-6 shadow-sm hover:shadow-xl border border-slate-100 group overflow-hidden">
                   <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                      <dotlottie-player
                         src="img/truck loading.lottie"
@@ -303,7 +428,7 @@
                      Пълна организация
                   </h3>
                   <p class="mb-3">Поемаме целия процес – от поръчката до готовите мебели, без да се тревожите за нищо.</p>
-                  <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                  <ul class="space-y-2 mb-5 text-sm text-orange-100">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
                         <span>Свързване и уточняване на нуждите</span>
@@ -325,7 +450,7 @@
 
                <!-- Service Card 5 -->
 
-               <div class="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group overflow-hidden">
+                  <div class="relative bg-gradient-to-br from-white/40 via-white/10 to-transparent hover:from-orange-400/40 transition duration-500 rounded-xl p-6 shadow-sm hover:shadow-xl border border-slate-100 group overflow-hidden">
                   <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                      <dotlottie-player
                         src="img/packing.lottie"
@@ -341,7 +466,7 @@
                      Качване до етаж и подреждане
                   </h3>
                   <p class="mb-3">Осигуряваме безопасно качване на мебелите до желания етаж и финално подреждане, за да са готови за ползване веднага.</p>
-                  <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                  <ul class="space-y-2 mb-5 text-sm text-orange-100">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
                         <span>Безпроблемна доставка до етаж</span>
@@ -363,7 +488,7 @@
 
                <!-- Service Card 6 -->
 
-               <div class="relative bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition duration-300 border border-slate-100 group overflow-hidden">
+                  <div class="relative bg-gradient-to-br from-white/40 via-white/10 to-transparent hover:from-orange-400/40 transition duration-500 rounded-xl p-6 shadow-sm hover:shadow-xl border border-slate-100 group overflow-hidden">
                   <div class="w-14 h-14 rounded-2xl service-icon-bg flex items-center justify-center mb-5 group-hover:scale-110 transition">
                      <dotlottie-player
                         src="img/Success.lottie"
@@ -379,7 +504,7 @@
                      Защо нас
                   </h3>
                   <p class="mb-3">Ние сме професионален партньор, който гарантира качество, безопасност и внимание към всеки детайл.</p>
-                  <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                  <ul class="space-y-2 mb-5 text-sm text-orange-100">
                      <li class="flex items-start gap-2">
                         <span class="w-1.5 h-1.5 bg-red-200 rounded-full mt-2 flex-shrink-0"></span>
                         <span>Пълна организация и внимателна работа</span>
@@ -404,57 +529,239 @@
       </section>
 
 
-         <section class="py-10 max-w-5xl mx-auto px-4">
-    <h1 class="text-3xl md:text-5xl text-center mb-8 text-blue-700 font-extrabold">
-        Често задавани въпроси
-    </h1>
+      <section id="questions" class="scroll-mt-32 py-10 max-w-5xl mx-auto px-4">
+         <h1 class="text-3xl md:text-5xl text-center mb-8 text-blue-800 font-extrabold">
+            Често задавани въпроси
+         </h1>
 
-    <div class="space-y-2">
+         <div class="space-y-2">
 
-        <!-- Item -->
-        <div class="border rounded-lg overflow-hidden">
-            <button onclick="toggleFAQ(this)" 
-                class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
-                
-                Какъв е районът на услугите ви?
-                <span class="text-2xl">+</span>
-            </button>
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                     1. Какви услуги предлагате?
+                     <span class="text-2xl">+</span>
+                  </button>
 
-            <div class="hidden p-4 text-gray-600 border-t">
-                Предлагаме услуги за почистване и транспорт в Бургас, Равда, Поморие, Несебър, Слънчев бряг и др.
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Предлагаме цялостни решения – преместване на домове и офиси, транспорт с бус, пренасяне на тежки предмети, както и професионален монтаж и демонтаж на мебели.
+                  </div>
             </div>
-        </div>
 
-        <!-- Item -->
-        <div class="border rounded-lg overflow-hidden">
-            <button onclick="toggleFAQ(this)" 
-                class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
-                
-                Какви услуги за почистване предлагате?
-                <span class="text-2xl">+</span>
-            </button>
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                    2. В кои градове работите?
+                     <span class="text-2xl">+</span>
+                  </button>
 
-            <div class="hidden p-4 text-gray-600 border-t">
-                Предлагаме основно, след ремонт и абонаментно почистване.
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Работим основно в Бургас и региона.
+                  </div>
             </div>
-        </div>
 
-        <!-- Item -->
-        <div class="border rounded-lg overflow-hidden">
-            <button onclick="toggleFAQ(this)" 
-                class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
-                
-                Колко време отнема услугата?
-                <span class="text-2xl">+</span>
-            </button>
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                     3. Работите ли през уикенда?
+                     <span class="text-2xl">+</span>
+                  </button>
 
-            <div class="hidden p-4 text-gray-600 border-t">
-                Зависи от обема на работа, но обикновено между 2 и 6 часа.
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Да, работим всеки ден, включително събота и неделя – съобразяваме се изцяло с вашия график.
+                  </div>
             </div>
-        </div>
 
-    </div>
-</section>
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                     4. Колко струва преместването?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Цената зависи от обема, разстоянието и условията (етаж, асансьор и т.н.). Даваме точна оферта след кратък разговор или снимки.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                     5. Мога ли да получа цена предварително?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Разбира се – изпратете ни снимки или описание и ще получите бърза и точна оферта без скрити такси.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                     6. Опаковате ли багажа?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Да, предлагаме и опаковане с подходящи материали, за да гарантираме безопасност при транспортиране.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                    7. Как гарантирате, че няма да има щети?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Работим внимателно и използваме защитни материали. Отнасяме се към вещите ви като към свои.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                    8. Сглобявате ли мебели от IKEA и други магазини?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Да, имаме опит с всички популярни марки и гарантираме бърз и качествен монтаж.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                    9. Колко време отнема сглобяването?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Зависи от мебелите, но обикновено стандартни мебели се сглобяват в рамките на няколко часа.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                    10. Може ли демонтаж и повторен монтаж?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Да, предлагаме пълна услуга – разглобяване, транспорт и сглобяване на нов адрес.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                    11. Пренасяте ли тежки мебели или техника?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Да.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                    12. Как се справяте без асансьор?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Имаме опит с носене по стълби – работим бързо и безопасно, независимо от етажа.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                    13. Колко време предварително трябва да запазя час?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Препоръчваме 1–2 дни по-рано, но често можем да реагираме и в същия ден.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                    14. Как да направя заявка?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Свържете се с нас по телефон или съобщение – ще уточним всичко бързо и лесно.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                                     
+                     15. Защо да изберем вас?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Защото работим коректно, бързо и внимателно. Даваме ясни цени, спазваме уговорките и държим клиентът да остане доволен.
+                  </div>
+            </div>
+
+            <!-- Item -->
+            <div class="border rounded-lg overflow-hidden">
+                  <button onclick="toggleFAQ(this)" 
+                     class="w-full flex justify-between items-center p-4 font-bold text-left text-blue-800">
+                     
+                    16. Кога мога да се свържа с вас?
+                     <span class="text-2xl">+</span>
+                  </button>
+
+                  <div class="hidden p-4 text-orange-100 border-t">
+                     Може да се свържете с нас всеки ден от 08:00 до 20:00 ч. по телефон. Също така може да ни пишете по всяко време във Viber и ще ви отговорим възможно най-бързо.
+                  </div>
+            </div>
+
+         </div>
+      </section>
 
       <!-- Footer -->
        <hr>
@@ -470,9 +777,9 @@
 
          <!-- Logo + Text -->
          <div>
-            <h2 class="text-3xl font-bold mb-4 ">Транспортни услуги</h2>
+            <img src="img/logo.png" alt="logo" class="w-64">
             <p class="text-sm text-gray-200 leading-relaxed">
-               Премести се лесно, живей на чисто.  
+               Бърз и надежден транспорт.  
                Свържете се с нас за безплатна консултация!
             </p>
          </div>
@@ -481,22 +788,22 @@
          <div>
             <h3 class="font-semibold mb-4">Бързи връзки</h3>
             <ul class="space-y-2 text-sm text-gray-200">
-               <li><a href="#" class="hover:text-white">Начало</a></li>
-               <li><a href="#" class="hover:text-white">Услуги</a></li>
-               <li><a href="#" class="hover:text-white">Контакти</a></li>
-               <li><a href="#" class="hover:text-white">ЧЗВ</a></li>
+               <li><a href="#index" class="hover:text-white">Начало</a></li>
+               <li><a href="#us" class="hover:text-white">За нас</a></li>
+               <li><a href="#services" class="hover:text-white">Услуги</a></li>
+               <li><a href="#questions" class="hover:text-white">ЧЗВ</a></li>
             </ul>
          </div>
 
          <!-- Services -->
          <div>
-            <h3 class="font-semibold mb-4">Хамалски услуги</h3>
+            <h3 class="font-semibold mb-4">Нашите услуги</h3>
             <ul class="space-y-2 text-sm text-gray-200">
-               <li>Преместване на дома</li>
-               <li>Преместване на офис</li>
-               <li>Преместване на мебели</li>
-               <li>Преместване на техника</li>
-               <li>Изхвърляне на отпадъци</li>
+               <li>Доставка до клиента</li>
+               <li>Демонтаж и извозване</li>
+               <li>Качване до етаж и подреждане</li>
+               <li>Чисто, бързо и лесно</li>
+               <li>Извозване на старите мебели</li>
             </ul>
          </div>
 
