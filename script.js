@@ -142,7 +142,19 @@ window.addEventListener('scroll', () => {
         
     lastScroll = currentScroll;
 });
-    
+
+function toggleFAQ(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector("span");
+
+    content.classList.toggle("hidden");
+
+    if (content.classList.contains("hidden")) {
+        icon.textContent = "+";
+    } else {
+        icon.textContent = "−";
+    }
+}
 
 
 
