@@ -46,13 +46,13 @@ const slidesContent = [
         top: "Бързо и сигурно преместване",
         title: "Без<br>стрес!",
         sub: "Доверете се на професионалисти!",
-        img: "img/slide2.webp"
+        img: "img/slide-2.jpg"
     },
     {
         top: "Най-добрите цени",
         title: "Изгодно<br>решение!",
         sub: "Качество на достъпна цена!",
-        img: "img/slide3.png"
+        img: "img/slide-3.jpg"
     }
 ];
 
