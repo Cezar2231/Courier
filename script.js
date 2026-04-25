@@ -156,6 +156,21 @@ function toggleFAQ(button) {
     }
 }
 
+// Close mobile menu when clicking outside
+document.addEventListener('click', function (event) {
+    const menu = document.getElementById('mobile-menu');
+    const menuButton = document.querySelector('button[onclick="toggleMobileMenu()"]');
+
+    // ако менюто е отворено
+    if (!menu.classList.contains('hidden')) {
+
+        // ако кликът НЕ е вътре в менюто и НЕ е бутонът за отваряне
+        if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+            menu.classList.add('hidden');
+        }
+    }
+});
+
 
 
 
